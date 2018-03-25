@@ -11,7 +11,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:nicepangolin/homepage.git',
         path: '/home/ubuntu/homepage',
-        'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
+        'post-deploy': 'pwd && npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
   }
