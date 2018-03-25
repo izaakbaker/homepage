@@ -1,0 +1,14 @@
+{
+  "name": "homepage-server-node",
+  "version": "1.0.0",
+  "description": "Test Node server to get up and running",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "author": "Izaak Baker",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
