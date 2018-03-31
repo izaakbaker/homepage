@@ -3,16 +3,33 @@ html {
 }
 
 body {
-    border: 15px solid yellow;
     height: 100%;
     box-sizing: border-box;
     margin: 0;
 }
 
-.ieb-heading {
-    color: red;
-}
+.ize-app {
+    border: 15px solid yellow;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
 
-.ieb-running-text {
-    color: blue;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: 'Merriweather', serif;
+    }
+
+    a {
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
