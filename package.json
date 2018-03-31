@@ -2,8 +2,10 @@
   "name": "homepage-server-node",
   "version": "1.0.0",
   "description": "Test Node server to get up and running",
-  "main": "server/index.js",
+  "main": "dist/server.js",
   "scripts": {
+    "build": "npm run build-ts",
+    "build-ts": "tsc",
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +13,12 @@
   "author": "Izaak Baker",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
-    "pm2": "^2.10.1"
+    "@types/express": "^4.11.1",
+    "pm2": "^2.10.1",
+    "typescript": "^2.8.1"
   }
 }
