@@ -2,7 +2,7 @@
   "name": "homepage-server-node",
   "version": "1.0.0",
   "description": "Test Node server to get up and running",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production",
